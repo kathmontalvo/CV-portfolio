@@ -5,8 +5,7 @@
 	License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
-html,
-body {
+html, body {
     margin: 0;
     font-size: 100%;
     background: #fff;
@@ -27,11 +26,7 @@ a:hover {
     text-decoration: none;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="text"],
-input[type="email"],
-input[type="search"] {
+input[type="button"], input[type="submit"], input[type="text"], input[type="email"], input[type="search"] {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -40,12 +35,7 @@ input[type="search"] {
     font-family: 'Oswald', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     letter-spacing: 1px;
     font-weight: 400;
@@ -77,8 +67,7 @@ header {
     width: 100%;
 }
 
-.toggle,
-[id^=drop] {
+.toggle, [id^=drop] {
     display: none;
 }
 
@@ -88,7 +77,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-
 
 #logo a {
     float: left;
@@ -103,13 +91,11 @@ nav {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
     font-family: 'Oswald', sans-serif;
-
 }
 
 #logo a span {
     color: #FFBF16;
 }
-
 
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
@@ -135,7 +121,6 @@ nav ul {
 
 nav ul li {
     margin: 0px 0.3em;
-    display: inline-block;
     float: left;
 }
 
@@ -153,7 +138,6 @@ nav ul.menu li a {
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
 }
-
 
 nav ul li ul li:hover {
     background: #FFBF16;
@@ -185,7 +169,7 @@ nav ul ul {
 
 /* Display Dropdowns on Hover */
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: inherit;
 }
 
@@ -217,19 +201,20 @@ nav ul ul ul li {
     left: 170px;
 }
 
-
 /* Change ' +' in order to change the Dropdown symbol */
 
-li > a:only-child:after {
+li>a:only-child:after {
     content: '';
 }
 
+.whitesmoke {
+    color: whitesmoke !important;
+}
 
 /* Media Queries
 --------------------------------------------- */
 
 @media all and (max-width:991px) {
-
     #logo {
         display: block;
         padding: 0;
@@ -237,21 +222,17 @@ li > a:only-child:after {
         text-align: center;
         float: none;
     }
-
     nav {
         margin: 0;
     }
     nav a {
         color: #333;
     }
-
     /* Hide the navigation menu by default */
     /* Also hide the  */
-    .toggle + a,
-    .menu {
+    .toggle+a, .menu {
         display: none;
     }
-
     /* Stylinf the toggle lable */
     .toggle {
         display: block;
@@ -277,14 +258,12 @@ li > a:only-child:after {
         font-size: 15px;
         letter-spacing: 1px;
     }
-
     .toggle:hover {
         color: #333;
         background-color: #fff;
     }
-
     /* Display Dropdown when clicked on Parent Lable */
-    [id^=drop]:checked + ul {
+    [id^=drop]:checked+ul {
         display: block;
         background: #fff;
         padding: 15px 0;
@@ -292,38 +271,27 @@ li > a:only-child:after {
         width: 80%;
         margin: 0 auto;
     }
-
     /* Change menu item's width to 100% */
     nav ul li {
         display: block;
         width: 100%;
         padding: 5px 0;
     }
-
-    nav ul ul .toggle,
-    nav ul ul a {
+    nav ul ul .toggle, nav ul ul a {
         padding: 0 40px;
     }
     nav ul.menu li a {
         color: #312f2f;
     }
-
-    nav a:hover,
-    nav ul ul ul a {
+    nav a:hover, nav ul ul ul a {
         background-color: transparent;
     }
-
-    nav ul li ul li .toggle,
-    nav ul ul a,
-    nav ul ul ul a {
+    nav ul li ul li .toggle, nav ul ul a, nav ul ul ul a {
         padding: 14px 20px;
         color: #312f2f;
         font-size: 15px;
     }
-
-
-    nav ul li ul li .toggle,
-    nav ul ul a {
+    nav ul li ul li .toggle, nav ul ul a {
         background-color: #fff;
     }
     nav ul ul li a {
@@ -336,13 +304,10 @@ li > a:only-child:after {
         color: #ffffff;
         /* has to be the same number as the "line-height" of "nav a" */
     }
-
     /* Hide menus on hover */
-    nav ul ul li:hover > ul,
-    nav ul li:hover > ul {
+    nav ul ul li:hover>ul, nav ul li:hover>ul {
         display: none;
     }
-
     /* Fisrt Tier Dropdown */
     nav ul ul li {
         display: block;
@@ -365,7 +330,7 @@ li > a:only-child:after {
 }
 
 @media all and (max-width:568px) {
-    [id^=drop]:checked + ul {
+    [id^=drop]:checked+ul {
         display: block;
         background: #fff;
         padding: 15px 0;
@@ -379,7 +344,6 @@ li > a:only-child:after {
         margin: auto;
         width: 70%;
     }
-
 }
 
 .login-icon p {
@@ -387,7 +351,6 @@ li > a:only-child:after {
 }
 
 .login-icon span {
-
     color: #fcd000;
 }
 
@@ -497,7 +460,7 @@ a.read-more:hover {
 /*-- //heading --*/
 
 #about {
-    background: #fff;
+    background-color: #f7f7f7;
 }
 
 .ab-info {
@@ -591,7 +554,6 @@ a.read-more:hover {
 .popup h2 {
     margin-top: 0;
     color: #fff;
-
 }
 
 .popup .close {
@@ -609,17 +571,15 @@ a.read-more:hover {
     color: #30c39e;
 }
 
-
 /*-- //popup --*/
 
 /*-- //banner --*/
 
 .services {
-    background: #f7f7f7;
+    background: #EBEDEF;
 }
 
-h3.tittle,
-h3.tittle.two {
+h3.tittle, h3.tittle.two {
     font-size: 2.3em;
     font-weight: 400;
     color: #33353a;
@@ -627,8 +587,7 @@ h3.tittle.two {
     text-transform: uppercase;
 }
 
-h3.tittle span,
-h3.tittle.two span {
+h3.tittle span, h3.tittle.two span {
     color: #FFBF16;
     font-size: 2em;
 }
@@ -643,7 +602,6 @@ h3.tittle.two {
     letter-spacing: 1px;
     display: block;
     text-transform: uppercase;
-
 }
 
 .content-left span {
@@ -715,7 +673,7 @@ h6.date {
 
 /*-- /testimonials --*/
 
-#testimonials {
+.testimonials {
     background: #FFBF16;
 }
 
@@ -733,14 +691,14 @@ h6.date {
 }
 
 .test-img img {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -moz-border-radius: 50%;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -o-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -moz-border-radius: 30%;
     padding: 4px;
     background: hsla(21, 60%, 94%, 0.33);
-    width: 15%;
+    width: 50%;
 }
 
 .w3ls-footer.test-soc ul li {
@@ -779,7 +737,6 @@ ul.list-unstyled.w3ls-icons.clients li span:hover {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-
 }
 
 /*-- //testimonials --*/
@@ -825,7 +782,6 @@ ul.list-unstyled.w3ls-icons.clients li span:hover {
     color: #fff;
     letter-spacing: 3px;
     text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-
 }
 
 .count-text {
@@ -946,9 +902,7 @@ h5.card-title.pricing-card-title {
     font-weight: 300;
 }
 
-.pricing-grid.active ul.list-unstyled li,
-.pricing-grid.active h5.card-title,
-.pricing-grid.activea {
+.pricing-grid.active ul.list-unstyled li, .pricing-grid.active h5.card-title, .pricing-grid.active {
     color: #fff;
 }
 
@@ -973,10 +927,14 @@ ul.price-in li {
     color: #586673;
 }
 
+.price-button {
+    text-align: center;
+}
 .price-button a {
     background: transparent;
     color: #212529;
-    padding: 0.8em 2em;
+    margin: 0.5em;
+    padding: 0.8em 1em;
     border-radius: 4px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
     font-size: 13px;
@@ -989,8 +947,7 @@ ul.price-in li {
     letter-spacing: 2px;
 }
 
-.price-button a:hover,
-.price-button a.active {
+.price-button a:hover, .price-button a.active {
     background: #FFBF16;
     border: 2px solid #FFBF16;
 }
@@ -1024,8 +981,7 @@ h5.card-title.pricing-card-title label {
 
 /*---------*/
 
-h5.card-title a,
-h5.card-title {
+h5.card-title a, h5.card-title {
     color: #2e2f2f;
     font-weight: 400;
     font-size: 1.05em;
@@ -1130,12 +1086,10 @@ h5.card-title {
     -ms-border-radius: 5px;
 }
 
-.contact_grid_left ul li p,
-.contact_grid_left ul li a {
+.contact_grid_left ul li p, .contact_grid_left ul li a {
     color: #5a646b;
     letter-spacing: 1px;
 }
-
 
 .contact_grid_left h6 {
     font-size: 1em;
@@ -1176,8 +1130,7 @@ h5.card-title {
     vertical-align: middle;
 }
 
-.adress-info a,
-.adress-info p {
+.adress-info a, .adress-info p {
     color: #5a646b;
     letter-spacing: 1px;
     line-height: 1.9em;
@@ -1351,8 +1304,7 @@ a.move-top span {
 /*-- Responsive design --*/
 
 @media screen and (max-width: 1440px) {
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 50em;
     }
     .main-content.page-inner {
@@ -1361,8 +1313,7 @@ a.move-top span {
 }
 
 @media screen and (max-width: 1366px) {
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 47em;
     }
     .banner-info-w3layouts {
@@ -1377,15 +1328,12 @@ a.move-top span {
     .banner-info-w3layouts {
         padding-top: 17.5em;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 45em;
     }
     .footer-top p {
         padding-right: 0em;
     }
-
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -1395,12 +1343,10 @@ a.move-top span {
 }
 
 @media screen and (max-width: 991px) {
-
     .popup {
         width: 50%;
     }
-    .price-main,
-    .ab-content {
+    .price-main, .ab-content {
         float: left;
         width: 50%;
     }
@@ -1408,8 +1354,7 @@ a.move-top span {
         padding-top: 15em;
         width: 65%;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 40em;
     }
     .ab-info-con p {
@@ -1426,7 +1371,6 @@ a.move-top span {
     }
 }
 
-
 @media screen and (max-width: 800px) {
     .banner-info-w3layouts h3 {
         font-size: 2.3em;
@@ -1438,8 +1382,7 @@ a.move-top span {
         padding-top: 12em;
         width: 78%;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 34em;
     }
     .mid-right-info {
@@ -1483,20 +1426,16 @@ a.move-top span {
         padding-top: 10em;
         width: 85%;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 30em;
     }
-    h3.tittle,
-    h3.tittle.two {
+    h3.tittle, h3.tittle.two {
         font-size: 2em;
     }
     .ab-info h4 {
         font-size: 0.9em;
     }
-
-    .price-main,
-    .ab-content {
+    .price-main, .ab-content {
         float: left;
         width: 100%;
     }
@@ -1512,7 +1451,6 @@ a.move-top span {
     a.read-more {
         padding: 0.8em 2em;
     }
-
     .contact-page button.btn.btn-default {
         width: 35%;
     }
@@ -1533,8 +1471,7 @@ a.move-top span {
         font-size: 1.8em;
         letter-spacing: 1px;
     }
-    h3.tittle,
-    h3.tittle.two {
+    h3.tittle, h3.tittle.two {
         font-size: 1.8em;
     }
 }
@@ -1543,16 +1480,14 @@ a.move-top span {
     .banner-info-w3layouts h3 {
         font-size: 1.8em;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 28em;
     }
     .banner-info-w3layouts {
         padding-top: 8em;
         width: 95%;
     }
-    .main-content,
-    .layer {
+    .main-content, .layer {
         min-height: 25em;
     }
 }
