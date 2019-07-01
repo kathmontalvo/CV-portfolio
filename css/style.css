@@ -1152,13 +1152,13 @@ form#contactform1 {
 /* footer */
 
 .footer-content {
-    background: url(../images/banner1.jpg) center no-repeat;
+    background: url(../images/banner4.jpg) center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    min-height: 28em;
+    min-height: 4em;
 }
 
 hr {
@@ -1166,7 +1166,7 @@ hr {
 }
 
 .layer.footer {
-    min-height: 28em;
+    min-height: 4em;
     background: rgba(0, 0, 0, 0.82);
 }
 
