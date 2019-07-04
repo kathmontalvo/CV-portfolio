@@ -196,8 +196,8 @@
 	.home_banner_area {
 		min-height: 500px;
 	}
-	.home_banner_area .banner_inner {
-		min-height: 500px;
+	.home_banner_area .banner_inner img{
+		max-width: 85%;
 	}
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;
@@ -242,6 +242,7 @@
 	}
 	.wel_item {
 		margin-bottom: 30px;
+		text-align: center;
 	}
 	.welcome_text {
 		margin-top: 0px;
@@ -326,8 +327,10 @@
 	.pad_btm {
 		padding-bottom: 70px;
 	}
-	.home_banner_area .banner_inner .home_left_img {
-		display: none;
+	.home_banner_area .banner_inner .home_left_img img{
+		max-width: 80%;
+		/* display: none; */
+		margin-bottom: 1.5em;
 	}
 	.home_banner_area .banner_inner .banner_content {
 		padding-top: 0px;
@@ -358,6 +361,7 @@
     .home_banner_area .banner_inner .banner_content {
 		padding: 30px 15px;
 		margin-top: 0px;
+		text-align: center
 	}
 	.banner_content .white_btn {
 		display: block;

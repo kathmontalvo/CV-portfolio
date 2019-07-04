@@ -65,7 +65,20 @@ div ul li .nav-link:hover {
 /* .margin-port {
   margin: 5px;
 } */
-.logo_h{
+
+.l_blog_text p{
+  text-align: justify;
+}
+
+.l_blog_text h4{
+  text-align: center;
+}
+
+.portfolio-text a h4:hover {
+  color: #FFBF16;
+}
+
+.logo_h {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   color: #1C2833;
@@ -208,6 +221,27 @@ button:focus {
 .p0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+@media (min-width: 995px) {
+  .home_left_img img{
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 432px) {
+  .col-5{
+    max-width: 100% !important; 
+    flex: auto;
+    padding-left: 15%;
+  }
+  .feature_item{
+    padding: 10px !important;
+  }
+
+  .feature_item h5{
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -498,7 +532,7 @@ button:focus {
 
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+  background: url(..//images/home-banner.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
@@ -506,9 +540,6 @@ button:focus {
   width: 100%;
 }
 
-.home_banner_area .banner_inner .home_left_img {
-  padding-top: 195px;
-}
 
 .home_banner_area .banner_inner .col-lg-6 {
   vertical-align: middle;
@@ -693,7 +724,7 @@ button:focus {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .l_blog_item .l_blog_text h4:hover {
@@ -1413,7 +1444,13 @@ button:focus {
   opacity: .5;
 }
 
+/* @media (max-width: 767px) and (max-width: 720px){
+
+} */
 @media (max-width: 767px) {
+ .feature_item {
+   padding: 10% !important;
+ }
   .single-post-area .navigation-area .nav-left {
     margin-bottom: 30px;
   }
@@ -3724,7 +3761,6 @@ h6 {
   line-height: 24px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  margin-bottom: 40px;
 }
 
 .wel_item {
@@ -3758,7 +3794,7 @@ h6 {
 
 .tools_expert {
   box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
-  padding: 50px 35px;
+  padding: 65px 50px;
 }
 
 .tools_expert h3 {
